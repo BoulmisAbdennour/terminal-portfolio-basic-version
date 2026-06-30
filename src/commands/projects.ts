@@ -7,7 +7,7 @@ export default function projects(): string {
     
     <div class="project-card" style="border-top: 3px solid var(--accent-cyan);">
       <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
-        <span class="cyan" style="font-weight: 600; font-size: var(--font-xl);">🌫️ Atmospheric Pollution Simulator</span>
+        <a href="https://github.com/BoulmisAbdennour/PooCpp/tree/master/atmosphere_polution_simulator" target="_blank" class="cyan" style="font-weight: 600; font-size: var(--font-xl); text-decoration: none;">🌫️ Atmospheric Pollution Simulator</a>
         <span class="tag tag-primary">C++17</span>
       </div>
       <div style="color: var(--text-secondary); line-height: 1.8; font-size: var(--font-base);">
@@ -43,7 +43,7 @@ export default function projects(): string {
     
     <div class="project-card" style="border-top: 3px solid var(--accent-purple);">
       <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
-        <span class="purple" style="font-weight: 600; font-size: var(--font-xl);">🌡️ 2D Heat Equation Solver</span>
+        <a href="https://github.com/BoulmisAbdennour/TP_Poisson_C_students_2022_part1" target="_blank" class="purple" style="font-weight: 600; font-size: var(--font-xl); text-decoration: none;">🌡️ 2D Heat Equation Solver</a>
         <span class="tag" style="background: rgba(163, 113, 247, 0.15); color: var(--accent-purple);">C</span>
       </div>
       <div style="color: var(--text-secondary); line-height: 1.8; font-size: var(--font-base);">
@@ -60,7 +60,7 @@ export default function projects(): string {
     
     <div class="project-card" style="border-top: 3px solid var(--accent-orange);">
       <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
-        <span class="orange" style="font-weight: 600; font-size: var(--font-xl);">🧠 Neural Network from Scratch</span>
+        <a href="https://github.com/hibouwu/ppn-mnist-neural-network" target="_blank" class="orange" style="font-weight: 600; font-size: var(--font-xl); text-decoration: none;">🧠 Neural Network from Scratch</a>
         <span class="tag" style="background: rgba(240, 136, 62, 0.15); color: var(--accent-orange);">C++</span>
       </div>
       <div style="color: var(--text-secondary); line-height: 1.8; font-size: var(--font-base);">
@@ -90,6 +90,40 @@ export default function projects(): string {
         <span class="tag">TensorFlow</span>
         <span class="tag">DoE</span>
         <span class="tag">Process Optimization</span>
+      </div>
+    </div>
+
+    <div class="project-card" style="border-top: 3px solid var(--accent-red);">
+      <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
+        <a href="https://github.com/BoulmisAbdennour/Optimization-of-an-hybrid-parallel-D2Q9-lattice-Boltzmann-solver-for-K-rm-n-vortex-street" target="_blank" class="red" style="font-weight: 600; font-size: var(--font-xl); text-decoration: none;">🌀 Hybrid Parallel Lattice-Boltzmann Solver</a>
+        <span class="tag" style="background: rgba(248, 81, 73, 0.15); color: var(--accent-red);">C / MPI</span>
+      </div>
+      <div style="color: var(--text-secondary); line-height: 1.8; font-size: var(--font-base);">
+        Hybrid MPI + OpenMP parallel implementation of a D2Q9 lattice-Boltzmann solver, applied to 
+        the simulation of a Kármán vortex street. Optimized domain decomposition and inter-process 
+        communication for distributed-memory architectures.
+      </div>
+      <div style="margin-top: 1.25rem;">
+        <span class="tag">MPI</span>
+        <span class="tag">OpenMP</span>
+        <span class="tag">Lattice-Boltzmann</span>
+        <span class="tag">CFD</span>
+      </div>
+    </div>
+
+    <div class="project-card" style="border-top: 3px solid var(--accent-yellow);">
+      <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
+        <a href="https://github.com/BoulmisAbdennour/TP_TM" target="_blank" class="yellow" style="font-weight: 600; font-size: var(--font-xl); text-decoration: none;">🔥 Diffusion-Reaction Equation Solver</a>
+        <span class="tag" style="background: rgba(210, 153, 34, 0.15); color: var(--accent-yellow);">Python</span>
+      </div>
+      <div style="color: var(--text-secondary); line-height: 1.8; font-size: var(--font-base);">
+        Numerical resolution of a diffusion-reaction PDE (Techniques de Modélisation, UVSQ 2025-2026). 
+        Implements and compares finite difference schemes, with stability and convergence analysis.
+      </div>
+      <div style="margin-top: 1.25rem;">
+        <span class="tag">Numerical Methods</span>
+        <span class="tag">PDE</span>
+        <span class="tag">Finite Difference</span>
       </div>
     </div>
     

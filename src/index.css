@@ -324,6 +324,9 @@ html, body {
 /* Mobile warning */
 .mobile-warning {
   display: none;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: center;
   padding: 1rem;
   background: rgba(248, 81, 73, 0.1);
   border: 1px solid var(--accent-red);
@@ -331,6 +334,22 @@ html, body {
   color: var(--accent-red);
   text-align: center;
   margin-bottom: 1rem;
+}
+
+.mobile-warning-btn {
+  background: transparent;
+  border: 1px solid var(--accent-red);
+  color: var(--accent-red);
+  padding: 0.5rem 1.25rem;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.mobile-warning-btn:hover {
+  background: rgba(248, 81, 73, 0.15);
 }
 
 @media (max-width: 768px) {
@@ -450,4 +469,14 @@ pre {
   font-family: 'JetBrains Mono', monospace;
   font-size: 14px;
   line-height: 1.5;
+}
+
+/* Skill proof line */
+.skill-proof {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-top: -0.3rem;
+  margin-bottom: 0.6rem;
+  padding-left: 0.25rem;
+  font-style: italic;
 }

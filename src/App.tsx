@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect, type KeyboardEvent } from 'react';
+import DOMPurify from 'dompurify';
 import { commands, commandNames } from './commands';
 
 interface CommandHistory {
@@ -56,6 +57,7 @@ function App() {
     const [input, setInput] = useState('');
     const [historyIndex, setHistoryIndex] = useState(-1);
     const [bootComplete, setBootComplete] = useState(false);
+    const [mobileWarningDismissed, setMobileWarningDismissed] = useState(false);
     const inputRef = useRef<HTMLInputElement>(null);
     const terminalRef = useRef<HTMLPreElement>(null);
 
@@ -148,9 +150,17 @@ function App() {
 
     return (
         <div className="terminal-container">
-            <div className="mobile-warning">
-                For the best experience, please visit on desktop
-            </div>
+            {!mobileWarningDismissed && (
+                <div className="mobile-warning">
+                    <span>For the best experience, please visit on desktop.</span>
+                    <button
+                        className="mobile-warning-btn"
+                        onClick={() => setMobileWarningDismissed(true)}
+                    >
+                        Continue anyway
+                    </button>
+                </div>
+            )}
 
             {!bootComplete && <BootSequence onComplete={() => setBootComplete(true)} />}
 
@@ -179,7 +189,7 @@ function App() {
                             </label>
                             <span className="white">{item.command}</span>
                         </div>
-                        <div dangerouslySetInnerHTML={{ __html: item.output }} />
+                        <div dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(item.output, { ADD_ATTR: ['target'] }) }} />
                     </div>
                 ))}
 

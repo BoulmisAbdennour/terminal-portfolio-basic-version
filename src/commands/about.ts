@@ -37,7 +37,7 @@ export default function about(): string {
   <div class="info-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
     <div class="info-card" style="border-left-color: var(--accent-cyan);">
       <div class="cyan" style="font-weight: 600; font-size: var(--font-lg); margin-bottom: 0.5rem;">🎓 Master's in HPC</div>
-      <div class="grey" style="margin-bottom: 0.75rem;">UVSQ | 2025 — 2027</div>
+      <div class="grey" style="margin-bottom: 0.75rem;">UVSQ | 2025 — 2027 (M1 en cours)</div>
       <div style="line-height: 1.7;">High Performance Computing, Simulation & Optimization</div>
     </div>
     <div class="info-card" style="border-left-color: var(--accent-blue);">

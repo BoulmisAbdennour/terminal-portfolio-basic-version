@@ -5,7 +5,7 @@ export default function education(): string {
   
   <div class="timeline">
     <div class="timeline-item">
-      <div class="timeline-date">2025 — 2027</div>
+      <div class="timeline-date">2025 — 2027 (M1 in progress)</div>
       <div class="timeline-title">Master's Degree — High Performance Computing & Simulation</div>
       <div class="timeline-company">UVSQ Université de Versailles Saint-Quentin-en-Yvelines, France</div>
       <div style="margin-top: 1rem; color: var(--text-secondary); line-height: 1.8;">
