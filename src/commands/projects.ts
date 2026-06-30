@@ -3,7 +3,7 @@ export default function projects(): string {
 <div class="command-output">
   <div class="section-header">FEATURED PROJECTS</div>
   
-  <div class="info-grid" style="grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));">
+  <div class="info-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
     
     <div class="project-card" style="border-top: 3px solid var(--accent-cyan);">
       <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">

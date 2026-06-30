@@ -97,7 +97,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   </div>
   
   <div class="section-header">CURRENT FOCUS</div>
-  <div class="info-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+  <div class="info-grid" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
     <div class="info-card" style="border-left-color: var(--accent-cyan);">
       <div class="cyan" style="font-weight: 600; font-size: var(--font-lg); margin-bottom: 0.5rem;">🎓 Master's in HPC</div>
       <div class="grey" style="margin-bottom: 0.75rem;">UVSQ | 2025 — 2027 (M1 en cours)</div>
@@ -154,7 +154,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   </div>
   
   <div class="section-header">CERTIFICATIONS</div>
-  <div class="info-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
+  <div class="info-grid" style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));">
     <div class="edu-card" style="border-left: 4px solid var(--accent-green); padding: 1.5rem; background: var(--bg-card); border-radius: 10px;">
       <div class="green" style="font-weight: 600; font-size: var(--font-lg);">Accenture Data Analytics</div>
       <div class="grey" style="margin-top: 0.5rem;">Data Analytics & Visualization Job Simulation</div>
@@ -270,7 +270,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
 <div class="command-output">
   <div class="section-header">FEATURED PROJECTS</div>
   
-  <div class="info-grid" style="grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));">
+  <div class="info-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
     
     <div class="project-card" style="border-top: 3px solid var(--accent-cyan);">
       <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">

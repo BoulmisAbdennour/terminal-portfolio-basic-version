@@ -38,7 +38,7 @@ export default function education(): string {
   </div>
   
   <div class="section-header">CERTIFICATIONS</div>
-  <div class="info-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
+  <div class="info-grid" style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));">
     <div class="edu-card" style="border-left: 4px solid var(--accent-green); padding: 1.5rem; background: var(--bg-card); border-radius: 10px;">
       <div class="green" style="font-weight: 600; font-size: var(--font-lg);">Accenture Data Analytics</div>
       <div class="grey" style="margin-top: 0.5rem;">Data Analytics & Visualization Job Simulation</div>
