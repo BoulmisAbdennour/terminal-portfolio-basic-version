@@ -38,7 +38,13 @@ function BootSequence({ onComplete }: { onComplete: () => void }) {
             }
         }, 100);
 
-        return () => clearInterval(interval);
+        // Filet de sécurité : force la fin du boot après 2.5s max
+        const safetyTimeout = setTimeout(onComplete, 2500);
+
+        return () => {
+            clearInterval(interval);
+            clearTimeout(safetyTimeout);
+        };
     }, [onComplete]);
 
     return (
