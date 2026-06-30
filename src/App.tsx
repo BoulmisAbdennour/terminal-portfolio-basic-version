@@ -227,6 +227,7 @@ function App() {
                                 onChange={(e) => setInput(e.target.value)}
                                 onKeyDown={handleKeyDown}
                                 autoComplete="off" aria-label="Terminal command input"
+                                aria-describedby="terminal-help"
                                 autoFocus
                                 className="prompt-input"
                             />
