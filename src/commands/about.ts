@@ -14,7 +14,7 @@ export default function about(): string {
         Bridging the gap between chemical engineering principles and high-performance computing. 
         I transform complex physical phenomena into optimized computational solutions.
       </p>
-      <div style="margin-top: 1.5rem;">
+      <div style="margin-top: 1.5rem; display: flex; flex-wrap: wrap; gap: 0.4rem;">
         <span class="tag tag-primary">CFD</span>
         <span class="tag tag-primary">HPC</span>
         <span class="tag tag-primary">Python</span>
