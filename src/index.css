@@ -483,16 +483,16 @@ pre {
 
 /* Responsive fixes */
 .timeline-item {
-  padding: 0.6rem 0;
+  padding: 0.5rem 0;
 }
 
 .timeline-item::before {
-  top: 0.9rem;
+  top: 0.85rem;
 }
 
-@media (max-width: 900px) {
-  .info-grid {
-    grid-template-columns: 1fr !important;
+@media (max-width: 768px) {
+  .terminal-container {
+    padding: 0.75rem;
   }
 
   .profile-card {
@@ -502,21 +502,6 @@ pre {
 
   .profile-image {
     margin: 0 auto;
-  }
-
-  .project-card,
-  .edu-card,
-  .info-card {
-    min-width: 0 !important;
-  }
-
-  .terminal-container {
-    padding: 0.75rem;
-  }
-
-  .skill-name {
-    min-width: 100px;
-    font-size: 12px;
   }
 
   pre {
@@ -529,5 +514,10 @@ pre {
 
   .prompt-input {
     font-size: 13px;
+  }
+
+  .skill-name {
+    min-width: 100px;
+    font-size: 12px;
   }
 }
