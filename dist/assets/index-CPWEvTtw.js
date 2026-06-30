@@ -49,7 +49,9 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
 `}function Ny(){return`
 <div class="command-output">
   <div class="about-header">
-    <img src="/profile.png" alt="Abdennour Boulmis" class="about-photo" />
+    <div class="about-photo-container">
+      <img src="/profile.png" alt="Abdennour Boulmis" class="about-photo" />
+    </div>
 <pre class="help-output" style="margin: 0;">
 <span class="green">●</span> <span class="grey">Open to opportunities</span>
 
