@@ -60,15 +60,10 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
 </pre>
   </div>
 
-<pre class="help-output">
-<span class="grey">Bridging the gap between chemical engineering principles and high-performance</span>
-<span class="grey">computing. I transform complex physical phenomena into optimized</span>
-<span class="grey">computational solutions.</span>
+<pre class="help-output"><span class="grey">Bridging the gap between chemical engineering principles and high-performance computing. I transform complex physical phenomena into optimized computational solutions.</span>
 
 <span class="yellow">─── MISSION STATEMENT ───</span>
-<span class="purple">"From molecular interactions to massive parallel computations —</span>
-<span class="purple">I believe the most elegant solutions emerge at the intersection of</span>
-<span class="purple">physics, mathematics, and code."</span>
+<span class="purple">"From molecular interactions to massive parallel computations — I believe the most elegant solutions emerge at the intersection of physics, mathematics, and code."</span>
 
 <span class="yellow">─── CURRENT FOCUS ───</span>
 
