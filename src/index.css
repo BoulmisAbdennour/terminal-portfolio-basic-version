@@ -566,8 +566,11 @@ html {
   font-family: 'JetBrains Mono', monospace;
   font-size: 14px;
   line-height: 1.8;
-  white-space: pre;
-  overflow-x: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: none;
+  max-width: 100%;
 }
 
 /* Generic terminal text output (replaces card-based layouts) */
@@ -606,4 +609,33 @@ html {
     align-items: center;
     text-align: center;
   }
+}
+
+/* ── Fix layout : cadre invisible cohérent pour tout le contenu ── */
+.command-output {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.help-output {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: none;
+  max-width: 100%;
+}
+
+.command-output p,
+.command-output .quote-box,
+.command-output .timeline-item {
+  max-width: 70ch;
+  text-align: left;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: none;
+}
+
+.skill-bar,
+.tag {
+  flex-wrap: wrap;
 }
