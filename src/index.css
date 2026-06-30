@@ -560,3 +560,12 @@ html {
   white-space: nowrap;
   border: 0;
 }
+
+/* Help output - vraie sortie terminal, pas de cards */
+.help-output {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+  line-height: 1.8;
+  white-space: pre;
+  overflow-x: auto;
+}
