@@ -615,6 +615,8 @@ html {
 .command-output {
   max-width: 100%;
   box-sizing: border-box;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .help-output {
@@ -628,7 +630,7 @@ html {
 .command-output p,
 .command-output .quote-box,
 .command-output .timeline-item {
-  max-width: 70ch;
+  max-width: 100%;
   text-align: left;
   word-wrap: break-word;
   overflow-wrap: break-word;
