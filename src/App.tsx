@@ -134,6 +134,16 @@ function App() {
                 setHistoryIndex(-1);
                 setInput('');
             }
+        } else if (e.key === 'l' && e.ctrlKey) {
+            e.preventDefault();
+            setHistory([]);
+            setInput('');
+        } else if (e.key === 'c' && e.ctrlKey) {
+            e.preventDefault();
+            setInput('');
+        } else if (e.key === 'Escape') {
+            e.preventDefault();
+            setMobileWarningDismissed(true);
         } else if (e.key === 'Tab') {
             e.preventDefault();
             const trimmedInput = input.trim().toLowerCase();
@@ -149,7 +159,8 @@ function App() {
     };
 
     return (
-        <div className="terminal-container">
+        <div className="terminal-container" role="application" aria-label="Terminal Portfolio">
+            <div id="terminal-help" className="visually-hidden">Terminal interactif. Tapez une commande et appuyez sur Entrée. Utilisez les flèches haut et bas pour naviguer dans l'historique. Appuyez sur Tab pour l'autocomplétion. Ctrl+L pour effacer, Ctrl+C pour annuler.</div>
             {!mobileWarningDismissed && (
                 <div className="mobile-warning">
                     <span>For the best experience, please visit on desktop.</span>
@@ -177,7 +188,7 @@ function App() {
                 </div>
             )}
 
-            <pre ref={terminalRef} style={{ margin: 0, padding: 0 }}>
+            <pre ref={terminalRef} style={{ margin: 0, padding: 0 }} role="log" aria-live="polite" aria-atomic="false">
                 {history.map((item, index) => (
                     <div key={index} className="command-output">
                         <div className="prompt">
@@ -209,7 +220,7 @@ function App() {
                                 value={input}
                                 onChange={(e) => setInput(e.target.value)}
                                 onKeyDown={handleKeyDown}
-                                autoComplete="off"
+                                autoComplete="off" aria-label="Terminal command input"
                                 autoFocus
                                 className="prompt-input"
                             />
