@@ -1,73 +1,75 @@
-# React + TypeScript + Vite
+<div align="center">
+  <img src="public/profile.png" alt="Abdennour Boulmis" width="120" style="border-radius: 50%;" />
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+  # Abdennour Boulmis — Terminal Portfolio
 
-Currently, two official plugins are available:
+  **Process Engineer • M1 HPC Student • Scientific Computing**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+  [![Live Demo](https://img.shields.io/badge/Live%20Demo-boulmis--abdennour.vercel.app-39d0d8?style=flat-square&logo=vercel)](https://boulmis-abdennour.vercel.app)
+  [![GitHub](https://img.shields.io/badge/GitHub-BoulmisAbdennour-181717?style=flat-square&logo=github)](https://github.com/BoulmisAbdennour)
 
-## React Compiler
+</div>
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🖥️ About
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+An interactive terminal-style portfolio built with **React + TypeScript + Vite**.  
+Instead of a classic page, visitors explore my profile by typing commands — just like a real terminal.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+> Try it live → **[boulmis-abdennour.vercel.app](https://boulmis-abdennour.vercel.app)**
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## ⚡ Available Commands
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+| Command | Description |
+|---|---|
+| <code>about</code> | Who I am, current focus, status |
+| <code>projects</code> | 7 featured projects with GitHub links |
+| <code>skills</code> | Technical skills linked to concrete projects |
+| <code>education</code> | Academic background (ENP Alger + UVSQ M1 HPC) |
+| <code>experiences</code> | Professional experience |
+| <code>neofetch</code> | System info terminal style |
+| <code>socials</code> | Links to GitHub, LinkedIn, email |
+| <code>resume</code> | Download my CV |
+| <code>help</code> | List all available commands |
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🚀 Featured Projects
+
+| Project | Stack | Link |
+|---|---|---|
+| 🌀 Hybrid Parallel Lattice-Boltzmann Solver | C / MPI / OpenMP | [GitHub](https://github.com/BoulmisAbdennour/Optimization-of-an-hybrid-parallel-D2Q9-lattice-Boltzmann-solver-for-K-rm-n-vortex-street) |
+| 🧠 Neural Network from Scratch | C++ / Autodiff / BLAS | [GitHub](https://github.com/hibouwu/ppn-mnist-neural-network) |
+| 🌫️ Atmospheric Pollution Simulator | C++17 / STL / Gnuplot | [GitHub](https://github.com/BoulmisAbdennour/PooCpp/tree/master/atmosphere_polution_simulator) |
+| 🌡️ 2D Heat Equation Solver | C / Numerical Methods | [GitHub](https://github.com/BoulmisAbdennour/TP_Poisson_C_students_2022_part1) |
+| 🔥 Diffusion-Reaction Equation Solver | Python / FD Schemes | [GitHub](https://github.com/BoulmisAbdennour/TP_TM) |
+| ☕ EXPRESSO Parallelism Library | C / Work-Stealing | — |
+| 🔬 ANN Adsorption Predictor | Python / TensorFlow | — |
+
+---
+
+## 🛠️ Tech Stack
+
+- React 18 + TypeScript + Vite
+- Tailwind CSS + shadcn/ui
+- JetBrains Mono font
+- DOMPurify (XSS protection)
+- Deployed on Vercel
+
+---
+
+## 📦 Run Locally
+
+    git clone https://github.com/BoulmisAbdennour/terminal-portfolio-basic-version
+    cd terminal-portfolio-basic-version
+    npm install
+    npm run dev
+
+---
+
+<div align="center">
+  <sub>M1 CHPS — UVSQ Université de Versailles Saint-Quentin-en-Yvelines | 2025–2027</sub>
+</div>
